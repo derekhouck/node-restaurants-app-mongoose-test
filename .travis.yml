@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: XEKrbnZO7g47wOukvbfXjCdJAnmFH/MT9epFRU8MGbtt0vrRz8/i4UOEKFMQFvU7KmsOr/eGJJufehUqGcm0CeqrQPT8z7elqySxCseqtTx0DmnJcfON13kpjdYP0Rb8SwoIsC9xZEpMTP5RFL2R2HVNvLS60MLXj3op1oXwuyhEsjMGGqEXvlY+cHiYeoOs295LoK7o2sjpdP3wQIwJ1n1bGWeQR8Wo0xtIr6MPrpVnVSotTVp1wqYXj56hf5snslF0/xH4/iMmyvZG7aUbyGf+XB7MywK+zasqpzY2DvmheQxQpH1ngwa31pYjoIep/kMc2NRPivJr8jFV+FgqMjJXy0jJEMY0dlmvXF0GJlGN0L7zejy0EQrJ03oK1TC/WOjYyT0ISNpIW+sgbDChMtehmbA6Qt+0Yio8Qts+WN1NWYN+VUU3KgbuNFWA95KB+KMwyOOjUXNk2CkvpB7xmnENqNPzIfQB2cOBL9VS+VZKD/q7SfWUXb7lGBg4xG3EOJxY86c9wV3NlKeYHAOHN0B7YJGgXJs3eGVbnA+diiNPCmDXIjgITmg/dVYxseF/TNNMu2HQN1wmxPI7zYxRPq2UKENidz/89F1Z95EaZSrMFL+qDI3J3zzqSp7R+0y7Ipk1EgpkvbbVYWwlwzeoSx2Vk+A2+UCv4n/ChuNM9gM=
+  app: rocky-hamlet-69830
+  on:
+    repo: derekhouck/node-restaurants-app-mongoose-test
+    branch: feature/with-tests
